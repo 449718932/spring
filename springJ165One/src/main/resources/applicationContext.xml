@@ -13,7 +13,14 @@
    <bean id="stu" class="com.lovo.spring.bean.StudentEntity"> 
      <property name="stuName" value="赵云"></property>
       <property name="age" value="1500"></property>
+      <!-- 注入一个对象 -->
+      <property name="t" ref="teacher"></property>
    </bean>
+   
+   <bean id="teacher" class="com.lovo.spring.bean.TeacherEntity">
+    <property name="teacherName" value="陈老师"></property>
+   </bean>
+   
 </beans>	
 		
 		

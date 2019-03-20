@@ -10,6 +10,16 @@ public class StudentEntity {
 	private String stuName; //名字
 	private int age;//年龄
 	
+	private TeacherEntity t;
+	
+	
+	
+	public TeacherEntity getT() {
+		return t;
+	}
+	public void setT(TeacherEntity t) {
+		this.t = t;
+	}
 	public String getStuName() {
 		return stuName;
 	}

@@ -19,5 +19,18 @@ public class TBean {
 	
     System.out.println(stu.getStuName());
 	}
+	@Test
+	public void tstudentTeacher(){
+	StudentEntity stu=	(StudentEntity) app.getBean("stu");//在容器里面去找我们需要的对象
 	
+	System.out.println(stu.getT().getTeacherName());
+     
+	}
+	@Test
+	public void teacher(){
+	TeacherEntity t=	(TeacherEntity) app.getBean("teacher");//在容器里面去找我们需要的对象
+	
+	System.out.println(t.getTeacherName());
+     
+	}
 }
